@@ -1,16 +1,12 @@
-import './App.css';
-import MainApp, { MainApp2 } from './components/MainApp';
 
-function App() {
-  
+import React from 'react';
+import ServiceAdd from './components/serviceAdd';
+import ServiceList from './components/serviceList';
+export default function App() {
   return (
-    <div className="App">
-      <MainApp />
-      <hr />
-      <MainApp2 />
-    
-    </div>
+    <>
+      <ServiceAdd />
+      <ServiceList />
+    </>
   );
 }
-
-export default App;
